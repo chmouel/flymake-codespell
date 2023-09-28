@@ -23,14 +23,17 @@
 ;;; Commentary:
 ;;
 ;; Uses flymake-quickdef, from https://github.com/karlotness/flymake-quickdef
+;;
+;; Install:
+;;
+;; (unless (package-installed-p 'flymake-codespell)
+;;     (package-vc-install "https://github.com/chmouel/flymake-codespell"))
 ;; (use-package flymake-codespell
 ;;   :hook
 ;;   (prog-mode .
 ;;              (lambda ()
 ;;                (require 'flymake-codespell)
-;;                (add-hook 'flymake-diagnostic-functions 'flymake-check-codespell nil t)))
-;;
-
+;;                (add-hook 'flymake-diagnostic-functions 'flymake-check-codespell nil t))))
 ;;; Code:
 
 (require 'flymake-quickdef)

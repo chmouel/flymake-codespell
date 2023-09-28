@@ -7,16 +7,14 @@ A simple flymake backend for [codespell](https://github.com/codespell-project/co
 Using package.el (with emacs29's package-vc.el):
 
 ```elisp
-(use-package flymake-codespell
-  :preface
-  (unless (package-installed-p 'flymake-codespell)
+(unless (package-installed-p 'flymake-codespell)
     (package-vc-install "https://github.com/chmouel/flymake-codespell"))
-  :load-path "~/.emacs.d/site-lisp/flymake-codespell"
+(use-package flymake-codespell
   :hook
   (prog-mode .
              (lambda ()
                (require 'flymake-codespell)
-               (add-hook 'flymake-diagnostic-functions 'flymake-check-codespell nil t)))
+               (add-hook 'flymake-diagnostic-functions 'flymake-check-codespell nil t))))
 ```
 
 ## Copyright
