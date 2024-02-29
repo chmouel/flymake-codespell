@@ -1,3 +1,8 @@
+
+> [!CAUTION]
+> This project has been deprecated, use the [ELPA](https://elpa.gnu.org/packages/flymake-codespell.html) version as an alternative.
+
+
 # flymake-codespell - codespell backend for flymake
 
 A simple flymake backend for [codespell](https://github.com/codespell-project/codespell)
